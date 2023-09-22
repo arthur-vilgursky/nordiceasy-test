@@ -10,6 +10,8 @@ use Symfony\Component\Uid\Uuid;
 #[ORM\Entity(repositoryClass: CommentRepository::class)]
 class Comment
 {
+    public const MAX_LENGTH = 1000;
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
